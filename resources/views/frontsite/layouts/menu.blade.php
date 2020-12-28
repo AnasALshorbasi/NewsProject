@@ -11,6 +11,13 @@
                     <a href="{{route('frontsite.home')}}" class="nav-item nav-link active">Home</a>
                     <a href="{{route('frontsite.single')}}" class="nav-item nav-link">Single Page</a>
                     <a href="{{route('frontsite.contact')}}" class="nav-item nav-link">Contact Us</a>
+
+
+
+                    @auth
+                        <a href="{{route('dashboard.home')}}" class="nav-item nav-link">Dashboard</a>
+                        <a href="{{route('logout')}}" class="nav-item nav-link">Logout</a>
+                    @endauth
                 </div>
                 <div class="social ml-auto">
                     <a href=""><i class="fab fa-twitter"></i></a>
